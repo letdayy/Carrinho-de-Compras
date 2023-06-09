@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" async></script>
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <main class="cart-container">
+      <h1>Carrinho de Compras</h1>
+      
+      <div class="item-container">
+        <label for="item-name">Nome do Item:</label>
+        <input type="text" id="item-name">
+      </div>
+      
+      <div class="item-container">
+        <label for="item-price">Preço do Item:</label>
+        <input type="number" step="0.01" id="item-price">
+      </div>
+      
+      <button class="btn-add btn" onclick="addItem()">Adicionar Item</button>
+      
+      <div id="cart-items"></div>
+      
+      <div class="cart-total">
+        Total: R$<span id="cart-total">0.00</span>
+      </div>
+      
+      <button class="btn-finish btn" onclick="checkout()">Finalizar Compra</button>
+    </main>
+  
+
+  </body>
+  </html>

@@ -1,0 +1,72 @@
+/* Estilos CSS para o carrinho de compras */
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* plano de fundo da página  */
+body {
+    background: linear-gradient(115.84deg, #FFFFFF 1.9%,
+     #27D8FF 40.98%, rgba(255, 126, 219, 0.9) 95.38%);
+}
+
+/* main  */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* titulo da pagina  */
+.cart-container h1 {
+    margin: 2rem;
+}
+
+/* preço total  */
+.cart-total {
+    font-weight: bold;
+}
+
+/* informações sobre o item  */
+.item-container, .cart-total, #cart-items {
+    margin: 1rem;
+}
+
+.item-container input {
+    height: 25px;
+    width: 400px;
+    padding-left: 0.5em;
+}
+
+/* botões da página  */
+.btn {
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+
+.btn-add {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.btn-add:hover {
+    background-color: #2d6d30;
+}
+
+.btn-finish {
+    background-color: #000000;
+    color: #ffffff;
+}
